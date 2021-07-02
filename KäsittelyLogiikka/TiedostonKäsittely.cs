@@ -30,7 +30,7 @@ public static void LueTiedosto(string tiedostopolku)
                 foreach (var rivi in rivit)
                 {
                     var kuvaukset = rivi.Split(';').ToList();
-                    kurssikuvaukset.Add(kuvaukset);
+                    //kurssikuvaukset.Add(kuvaukset);
                 }
             }
             catch (Exception)
