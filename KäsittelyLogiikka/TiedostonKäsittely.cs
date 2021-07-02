@@ -9,16 +9,18 @@ namespace Käsittelylogiikka
     {
         public List<List<string>> kurssikuvaukset { get; set; }
 
-        public static void LueTiedosto(string tiedostopolku)
+        public static List<List<string>> LueTiedosto(string tiedostopolku)
         {
             try
             {
+                var lista = new List<List<string>>();
                 var rivit = File.ReadAllLines(tiedostopolku);
                 foreach (var rivi in rivit)
                 {
                     var kuvaukset = rivi.Split(';').ToList();
-                    //kurssikuvaukset.Add(kuvaukset);
+                    lista.Add(kuvaukset);
                 }
+                return lista;
             }
             catch (Exception)
             {
