@@ -7,7 +7,7 @@ namespace UI
     {
         static void Main(string[] args)
         {
-            TiedostonKäsittely t = new TiedostonKäsittely();
+            var tk = TiedostonKäsittely.LueTiedosto("");
         }
     }
 }
