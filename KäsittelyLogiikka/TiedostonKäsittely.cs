@@ -9,7 +9,20 @@ namespace Käsittelylogiikka
     {
         public List<List<string>> kurssikuvaukset { get; set; }
 
-        public static void LueTiedosto(string tiedostopolku)
+        string lokinSijainti;
+        public void etsiLoki()
+        {
+            if (Directory.Exists("c:\\temp\\"))
+            {
+                lokinSijainti = "c:\\temp\\";
+            }
+            else
+            {
+                Directory.CreateDirectory("c:\\temp\\");
+                lokinSijainti = "c:\\temp\\";
+            }
+        }
+public static void LueTiedosto(string tiedostopolku)
         {
             try
             {
@@ -17,7 +30,7 @@ namespace Käsittelylogiikka
                 foreach (var rivi in rivit)
                 {
                     var kuvaukset = rivi.Split(';').ToList();
-                    //kurssikuvaukset.Add(kuvaukset);
+                    kurssikuvaukset.Add(kuvaukset);
                 }
             }
             catch (Exception)
@@ -26,16 +39,6 @@ namespace Käsittelylogiikka
                 throw;
             }
         }
-        string lokinSijainti;
-        //if (DirectoryInfo.Exists("c:\\temp\\"))
-        //{ 
-        //    lokinSijainti = "c:\\temp\\"; 
-        //}
-        //else 
-        //{
-        //    Directory.Create("c:\\temp\\");
-        //    lokinSijainti = "c:\\temp\\";
-        //}
     }
 
 
