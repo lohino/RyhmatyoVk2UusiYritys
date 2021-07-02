@@ -30,7 +30,7 @@ namespace Käsittelylogiikka
         }
 
 
-        // palauttaa rivit listana, joissa on oikea määrä sarakkeita.
+        // palauttaa true, jos rivi on oikeassa muodossa
         //public bool OnOikeaMääräSarakkeita(int oikeaSarakkeidenMäärä)
         //{
         //    string[] osat = testiMjono.Split(";");
