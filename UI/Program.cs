@@ -11,7 +11,9 @@ namespace UI
         {
             string loki = "c:\\temp\\loki.txt";
             if (!Directory.Exists("C:\\temp\\")) { Directory.CreateDirectory("c:\\temp\\"); }
-            var tk = TiedostonKäsittely.LueTiedosto("");
+            Console.WriteLine("Anna tiedosto: ");
+            var path = Console.ReadLine();
+            var tk = TiedostonKäsittely.LueTiedosto(path);
             int sar = tk[0].Count;
             foreach (var item in tk)
             {
