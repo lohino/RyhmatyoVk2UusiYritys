@@ -9,19 +9,19 @@ namespace Käsittelylogiikka
     {
         public List<List<string>> kurssikuvaukset { get; set; }
 
-        string lokinSijainti;
-        public void etsiLoki()
-        {
-            if (Directory.Exists("c:\\temp\\"))
-            {
-                lokinSijainti = "c:\\temp\\";
-            }
-            else
-            {
-                Directory.CreateDirectory("c:\\temp\\");
-                lokinSijainti = "c:\\temp\\";
-            }
-        }
+        //string lokinSijainti;
+        //public void etsiLoki()
+        //{
+        //    if (Directory.Exists("c:\\temp\\"))
+        //    {
+        //        lokinSijainti = "c:\\temp\\";
+        //    }
+        //    else
+        //    {
+        //        Directory.CreateDirectory("c:\\temp\\");
+        //        lokinSijainti = "c:\\temp\\";
+        //    }
+        //}
 public static void LueTiedosto(string tiedostopolku)
         {
             try
