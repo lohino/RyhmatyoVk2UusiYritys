@@ -28,6 +28,20 @@ namespace Käsittelylogiikka
                 throw;
             }
         }
+
+
+        // palauttaa rivit listana, joissa on oikea määrä sarakkeita.
+        //public bool OnOikeaMääräSarakkeita(int oikeaSarakkeidenMäärä)
+        //{
+        //    string[] osat = testiMjono.Split(";");
+        //    if (osat.Length == oikeaSarakkeidenMäärä)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+
         string lokinSijainti;
         //if (DirectoryInfo.Exists("c:\\temp\\"))
         //{ 
